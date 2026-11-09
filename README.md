@@ -112,4 +112,8 @@ Always keep the original SHA-256 manifests and audit documents alongside any red
 
 ---
 
+The MagneticOracle neural network is used in its existing role — as a feature-conditional controller of the physics simulation's synthesis parameters — while the pitches come from the VME front end rather than from the MagneticOracle's own event generator. The two systems are connected at the event interface but not at the neural interface.
+
+This is a meaningful integration because it exercises both systems in a real pipeline. It is not a claim that VME's outputs feed into MagneticOracle's neural controller (which would be a tighter coupling — the README's open research question #5 flags this: "Optional context adapter that lets VME chord / key bias MagneticOracle controls (not implemented yet)"). It is a claim that VME's symbolic output drives MagneticOracle's physics rendering.
+
 *Research integration only. Not a production music engine.*
