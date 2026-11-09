@@ -1,0 +1,30 @@
+{
+  "name": "Configuration A (production)",
+  "description": "Locked after multi-pass metric search against stepwise %, repeats %, mean interval, and Krumhansl-Schmuckler key correlation. Seed 42 reference runs.",
+  "weights": {
+    "alpha": 0.95,
+    "beta": 1.8,
+    "gamma": 2.8,
+    "delta": 0.3,
+    "soft_leap": 2.8,
+    "leap_slope": 1.25,
+    "max_repeats": 1
+  },
+  "verified_metrics_seed_42": {
+    "stepwise_pct": 44.7,
+    "repeat_pct": 0.0,
+    "mean_interval": 2.52,
+    "key_correlation": 0.718,
+    "notes": 160,
+    "raw_source": "constrained_random_walk_58_76"
+  },
+  "targets": {
+    "stepwise_pct": "60-70 (expressive preference ~45 also acceptable)",
+    "repeat_pct": "<15",
+    "mean_interval": "2.5-3.5",
+    "key_correlation": ">0.7"
+  },
+  "chord_vocabulary": ["C", "G", "Am", "F", "Em", "Dm"],
+  "pst_max_order": 3,
+  "pst_min_count": 1
+}

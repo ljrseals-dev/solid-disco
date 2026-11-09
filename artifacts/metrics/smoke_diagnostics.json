@@ -1,0 +1,44 @@
+{
+  "checkpoint": "/home/workdir/artifacts/hybrid_vme_oracle/artifacts/checkpoints/magnetic_oracle_feature_conditional_retrain.pt",
+  "sample_rate": 44100,
+  "duration_seconds": 6.0,
+  "iterations": 3,
+  "event_count": 12,
+  "impact_count": 150,
+  "peak_before_normalize": 7375.0599537774815,
+  "normalized_output_min": [
+    0.20048706233501434,
+    0.1499158889055252,
+    0.5499701499938965,
+    0.8500748872756958,
+    0.1499558538198471,
+    0.049248162657022476
+  ],
+  "normalized_output_max": [
+    0.20048706233501434,
+    0.1499158889055252,
+    0.5499701499938965,
+    0.8500748872756958,
+    0.1499558538198471,
+    0.049248162657022476
+  ],
+  "normalized_output_mean": [
+    0.20048706233501434,
+    0.1499158889055252,
+    0.5499701499938965,
+    0.8500748872756958,
+    0.1499558538198471,
+    0.049248162657022476
+  ],
+  "control_mean": {
+    "field_boost": 0.8502435311675072,
+    "snap": 0.9199327111244203,
+    "decay_scale": 1.3249552249908447,
+    "impact_thr": 1.7751123309135437,
+    "release_time": 1.5998234152793884,
+    "pitch_drift": -16.22706614434719
+  },
+  "wav": "artifacts/wav/smoke_hybrid.wav",
+  "seed": 42,
+  "fast": true
+}

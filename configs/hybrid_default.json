@@ -1,0 +1,35 @@
+{
+  "name": "hybrid_vme_oracle_default",
+  "description": "VME Config A pitch generation feeding MagneticOracle feature-conditional physics renderer",
+  "vme": {
+    "n_notes": 48,
+    "seed": 42,
+    "low_midi": 58,
+    "high_midi": 76,
+    "config": "vendor/config_a.json"
+  },
+  "bridge": {
+    "tempo": 100.0,
+    "default_duration_beats": 0.45,
+    "velocity": 0.72,
+    "velocity_jitter": 0.08
+  },
+  "oracle": {
+    "checkpoint": "artifacts/checkpoints/magnetic_oracle_feature_conditional_retrain.pt",
+    "fallback_checkpoint": "artifacts/checkpoints/magnetic_oracle_feature_decorrelation.pt",
+    "fast_iterations": 8,
+    "full_iterations": 24,
+    "fast_duration_sec": 6.0
+  },
+  "outputs": {
+    "wav": "artifacts/wav/hybrid.wav",
+    "diagnostics": "artifacts/metrics/hybrid_diagnostics.json",
+    "vme_metrics": "artifacts/metrics/vme_metrics.json"
+  },
+  "notes": [
+    "MagneticOracle historical claim is explicitly rejected (see original audit).",
+    "Physical-render centroid isolation remains an open research question.",
+    "VME PST is trained on a small diatonic corpus; expand for production use.",
+    "This hybrid is a research integration, not a production music system."
+  ]
+}

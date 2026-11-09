@@ -1,0 +1,18 @@
+{
+  "stepwise_pct": 18.18,
+  "repeat_pct": 0.0,
+  "mean_interval": 3.0,
+  "key_correlation": 0.5236,
+  "n_notes": 12,
+  "seed": 42,
+  "weights": {
+    "alpha": 0.95,
+    "beta": 1.8,
+    "gamma": 2.8,
+    "delta": 0.3,
+    "soft_leap": 2.8,
+    "leap_slope": 1.25,
+    "max_repeats": 1,
+    "config_name": "A"
+  }
+}

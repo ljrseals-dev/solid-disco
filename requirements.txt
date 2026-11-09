@@ -1,0 +1,7 @@
+# Hybrid VME + MagneticOracle
+torch>=2.0
+numpy>=1.24
+scipy>=1.10
+
+# Optional (already satisfied by the above for basic use)
+# scikit-learn  # only if you later add extra metric tools

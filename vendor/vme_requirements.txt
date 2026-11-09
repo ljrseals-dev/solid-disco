@@ -1,0 +1,5 @@
+numpy>=1.24
+torch>=2.0          # optional – only needed for VAE / neural timbre paths
+pretty_midi>=0.2.10 # optional – MIDI export
+fastapi>=0.100      # optional – web studio backend
+uvicorn>=0.22       # optional – web studio backend
